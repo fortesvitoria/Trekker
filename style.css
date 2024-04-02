@@ -17,3 +17,7 @@
     --preto: #0a0908;
     --grafite: #231f20;
 }
+
+body {
+    font-family: var(--fonte-corpo);
+}
