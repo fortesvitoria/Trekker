@@ -1,0 +1,11 @@
+/* IMPORTA FONTES GOOGLE*/
+/* titulo */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+/* corpo */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --fonte-titulo: "Libre Franklin", sans-serif;
+    --fonte-corpo: "Hind Vadodara", sans-serif;
+}
