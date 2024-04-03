@@ -9,10 +9,11 @@
     --fonte-titulo: "Libre Franklin", sans-serif;
     --fonte-corpo: "Hind Vadodara", sans-serif;
     --verde-escuro: #283618;
-    --vere-claro: #606c38;
+    --verde-claro: #606c38;
     --off-white: #fcfbf4;
     --branco: #f1f1f1;
     --laranja-escuro: #bc6c25;
+    --laranja-medio:#cc7325;
     --laranja-claro: #dda15e;
     --preto: #0a0908;
     --grafite: #231f20;
@@ -20,22 +21,35 @@
 
 body {
     font-family: var(--fonte-corpo);
-    color: var(--preto)!important;
+    color: var(--preto) !important;
 }
 
-h1, h2, h3 {
+h1 {
+    color: var(--preto);
+}
+
+h1,
+h2,
+h3 {
     font-family: var(--fonte-titulo);
-    color: var(--preto)!important;
 }
 
 h1 {
     font-weight: 800;
 }
 
+button {
+    margin-right: 1em;
+}
+
+.btn-outline-success {
+    background-color: var(--off-white);
+}
+
 /* NAVBAR/MENU */
 
 .navbar {
-background-color: var(--off-white)!important;
+    background-color: var(--off-white) !important;
 }
 
 .nav-icon {
@@ -51,4 +65,11 @@ background-color: var(--off-white)!important;
 .icone-nav {
     width: 24px;
     margin-right: 0.5em;
+}
+
+/* SECAO PESQUISA */
+.secao-pesquisa {
+    padding: 1em;
+    background-color: var(--verde-claro);
+    color: var(--off-white) !important;
 }
