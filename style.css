@@ -39,7 +39,7 @@ h1 {
 }
 
 button {
-    margin-right: 1em;
+    margin: 1em 1em 1em 0;
 }
 
 .btn-outline-success {
