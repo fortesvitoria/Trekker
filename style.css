@@ -10,7 +10,7 @@
     --fonte-corpo: "Hind Vadodara", sans-serif;
     --verde-escuro: #283618;
     --vere-claro: #606c38;
-    --off-white: #fefae0;
+    --off-white: #fcfbf4;
     --branco: #f1f1f1;
     --laranja-escuro: #bc6c25;
     --laranja-claro: #dda15e;
@@ -20,4 +20,35 @@
 
 body {
     font-family: var(--fonte-corpo);
+    color: var(--preto)!important;
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte-titulo);
+    color: var(--preto)!important;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+/* NAVBAR/MENU */
+
+.navbar {
+background-color: var(--off-white)!important;
+}
+
+.nav-icon {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.nav-marca {
+    display: flex;
+    align-items: center;
+}
+
+.icone-nav {
+    width: 24px;
+    margin-right: 0.5em;
 }

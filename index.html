@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +15,56 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <!-- CABECALHO/MENU -->
     <header>
-        
+        <!-- NAVBAR/MENU -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <!-- marca -->
+                <div class="nav-marca">
+                    <a class="navbar-brand" href="#"><img src="assets/images/logo.png"
+                            alt="logo circular de montanhas verdes com fundo laranja" class="nav-icon"></a><a
+                        class="navbar-brand" href="#">
+                        <h1>TREKKER</h1>
+                    </a>
+                </div>
+                <!-- fim marca -->
+                <!-- links -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <img src="assets/images/icone-voos.png" alt="icone aviao" class="icone-nav">Voos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <img src="assets/images/icone-estadia.png" alt="icone casa" class="icone-nav">Hospedagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="assets/images/icone-trekking.png" alt="icone boneco fazendo trilha" class="icone-nav">Atrações</a>
+                        </li>
+                    </ul>
+                    <!-- fim links -->
+<!-- pesquisa -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                    </form>
+                    <!-- fim pesquisa -->
+                </div>
+            </div>
+        </nav>
+
 
     </header>
-    
+
     <!-- improta js bootstrap -->
     <script src="assets/js/bootstrap.js"></script>
 </body>
+
 </html>
