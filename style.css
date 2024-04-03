@@ -77,6 +77,13 @@ button {
 /* SECAO OFERTAS */
 .secao-ofertas {
     padding: 1em;
+}
 
+.secao-cards {
+    /* display: flex; */
+    justify-content: space-around;
+}
+.card {
+    margin: 1em 0;
 }
 
