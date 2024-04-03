@@ -103,4 +103,5 @@ button {
 .preco-favorito img {
     width: 23.98px;
     height: 23.98px;
+    cursor: pointer;
 }
