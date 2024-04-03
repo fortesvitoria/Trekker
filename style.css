@@ -74,3 +74,9 @@ button {
     color: var(--off-white) !important;
 }
 
+/* SECAO OFERTAS */
+.secao-ofertas {
+    padding: 1em;
+
+}
+
