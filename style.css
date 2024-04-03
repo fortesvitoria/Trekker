@@ -92,7 +92,15 @@ button {
     margin: 0 1em;
     
 }
-
 .secao-card-passagens {
     justify-content: space-around;
+}
+.preco-favorito{
+    display: flex;
+    justify-content: space-between;
+}
+
+.preco-favorito img {
+    width: 23.98px;
+    height: 23.98px;
 }
