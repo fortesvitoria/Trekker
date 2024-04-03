@@ -90,4 +90,9 @@ button {
 /* SECAO OFERTAS */
 .secao-passagens {
     margin: 0 1em;
+    
+}
+
+.secao-card-passagens {
+    justify-content: space-around;
 }
