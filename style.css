@@ -30,12 +30,28 @@ h1 {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
     font-family: var(--fonte-titulo);
 }
 
 h1 {
     font-weight: 800;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--grafite);
 }
 
 button {
@@ -87,6 +103,23 @@ button {
     margin: 1em 0;
 }
 
+/* SECAO PASSEIOS */
+.secao-passeios {
+    padding: 1em;
+}
+
+.secao-carousel {
+    display: flex;
+    justify-content: center;
+}
+.carousel img{
+    max-width: 709px;
+}
+
+.carousel {
+    text-shadow: 2px 2px 4px var(--preto);
+}
+
 /* SECAO OFERTAS */
 .secao-passagens {
     margin: 0 1em;
@@ -104,4 +137,10 @@ button {
     width: 23.98px;
     height: 23.98px;
     cursor: pointer;
+}
+
+/* SECAO RODAPE */
+.secao-rodape{
+    padding: 1em;
+    background-color: var(--verde-claro);
 }
