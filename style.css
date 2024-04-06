@@ -140,7 +140,21 @@ button {
 }
 
 /* SECAO RODAPE */
-.secao-rodape{
+.secao-rodape, .secao-direitos{
     padding: 1em;
     background-color: var(--verde-claro);
+}
+
+
+.secao-rodape-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.secao-rodape-div ul {
+    padding: 0.75em;
+}
+.secao-direitos {
+    padding: 2em 0 1em 0;
+    text-align: center;
 }
