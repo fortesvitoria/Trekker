@@ -68,6 +68,39 @@
 
     <!-- CORPO -->
     <main>
+
+        <!-- SECAO CHAT -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-chat" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="assets/images/icone-chat.png" alt="icone-chat" class="icone-chat">
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"><img src="assets/images/icone-chat.png"
+                                alt="icone-chat" class="icone-nav">Fale conosco!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card-body chat-container">
+                            <!-- Mensagens do chat -->
+                            <div class="message">Usuário: Olá!</div>
+                            <div class="message">Atendente: Olá! Como posso ajudar?</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Digite sua mensagem...">
+                        </div>
+                        <button class="btn btn-primary" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIM SECAO CHAT -->
         <!-- SEÇÃO PESQUISA -->
         <div class="secao-pesquisa">
             <h3>Encontre sua próxima aventura</h3>

@@ -158,3 +158,25 @@ button {
     padding: 2em 0 1em 0;
     text-align: center;
 }
+
+/* CHAT */
+.modal-header {
+background-color: var(--laranja-escuro);
+font-family: var(--fonte-titulo)!important;
+}
+
+.modal-title {
+    color: var(--off-white);
+
+}
+
+.btn-chat {
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.icone-chat {    
+    width: 24px;
+}
