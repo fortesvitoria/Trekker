@@ -26,3 +26,11 @@
 .container-lateral {
     margin: 0.3em 0;
 }
+
+.texto-preco {
+    display: inline-block;
+    border-radius: 0.375rem;;
+    padding: 0.3em ;
+    background-color: var(--off-white);
+    border: solid 1px var(--laranja-escuro);
+}
