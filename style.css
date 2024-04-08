@@ -36,6 +36,10 @@ h5 {
     font-family: var(--fonte-titulo);
 }
 
+h6{
+    font-weight: 600;
+}
+
 h1 {
     font-weight: 800;
 }
@@ -61,7 +65,10 @@ button {
 .btn-outline-success {
     background-color: var(--off-white);
 }
-
+.sub-texto {
+    font-size: 14px;
+    color: var(--grafite);
+}
 /* NAVBAR/MENU */
 
 .navbar {
