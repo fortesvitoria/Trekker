@@ -1,4 +1,7 @@
-/* .container-info {
+.container-info {
     display: flex;
-    flex-wrap: wrap;
-} */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+}
