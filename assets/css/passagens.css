@@ -1,6 +1,10 @@
+
+/* tela-1175 */
+
 .container-info .card {
     background-color: var(--off-white)!important;
 }
+
 .tag-card-voo {
     cursor: default!important;
 }
@@ -52,4 +56,42 @@
 
 .aventura {
     padding-left: 0.35em;
+}
+
+/* tela max 1774*/
+@media only screen and (max-width: 1774px) {
+    .card-passagem {
+        flex-direction: column;        
+    }
+    .info-passagem-1 {
+        width: 100%;
+    }
+    .info-passagem-1 {
+        width: 100%;
+    }
+    
+    .info-passagem-2 {
+        width: 100%;
+    }
+    .horario {
+        width: 100%;
+    }
+
+    .preco-div {
+        width: 100%;
+        border-top: solid 1px var(--grafite);
+        border-left: none;
+        padding: 2em 0 2em 0;
+    }
+    
+}
+
+/* tela max 500*/
+@media only screen and (max-width: 500px) {
+    .container-info-texto, .card-passagem{
+        padding: 0;
+    }
+    .col-sm-12 {
+        width: 100%!important;
+    }
 }
