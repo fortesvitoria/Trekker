@@ -193,25 +193,4 @@ font-family: var(--fonte-titulo)!important;
 }
 
 /* PAGINA VOOS */
-.tag-card-voo {
-    cursor: default!important;
-}
 
-.container-info-texto {
-    display: flex;
-}
-
-.card-passagem {
-    display: flex;
-}
-
-.info-passagem {
-    display: flex;
-    /* justify-content: space-around; */
-    width: 75%;
-}
-
-.preco-div {
-    border-left: solid 1px var(--grafite);
-    padding: 0.75em;
-}
