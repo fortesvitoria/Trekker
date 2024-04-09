@@ -59,7 +59,7 @@
 }
 
 /* tela max 1774*/
-@media only screen and (max-width: 1774px) {
+@media only screen and (min-width: 1774px) {
     .card-passagem {
         flex-direction: column;        
     }
@@ -87,7 +87,7 @@
 }
 
 /* tela max 500*/
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 500px) {
     .container-info-texto, .card-passagem{
         padding: 0;
     }
