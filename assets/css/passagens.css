@@ -13,9 +13,16 @@
     display: flex;
 }
 
-.info-passagem {
+.info-passagem-1 {
     display: flex;
-    width: 30%;
+    flex-direction: column;
+    width: 55%;
+    margin: 0.5em;
+}
+
+.info-passagem-2 {
+    width: 15%;
+    margin: 0.5em;
 }
 
 .preco-div {
@@ -33,6 +40,15 @@
 }
 
 .horario {
-    width: 40%;
+    width: 10%;
+    padding: 0.5em;
 }
 
+.info-flex {
+    display: flex;
+    padding: 0.5em;
+}
+
+.aventura {
+    padding-left: 0.35em;
+}
