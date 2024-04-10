@@ -25,8 +25,12 @@
 }
 
 .info-passagem-2 {
-    width: 15%;
+    width: 20%;
     margin: 0.5em;
+}
+
+.passagem-icone {
+    max-height: 24px;
 }
 
 .preco-div {
