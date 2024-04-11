@@ -63,11 +63,12 @@
 }
 
 /* tela max 1774*/
-@media only screen and (min-width: 1774px) {
+@media  screen and (max-width: 860px) {
     .card-passagem {
-        flex-direction: column;        
+        flex-direction: column!important;        
     }
     .info-passagem-1 {
+        
         width: 100%;
     }
     .info-passagem-1 {
@@ -91,7 +92,7 @@
 }
 
 /* tela max 500*/
-@media only screen and (min-width: 500px) {
+@media screen and (min-width: 500px) {
     .container-info-texto, .card-passagem{
         padding: 0;
     }
