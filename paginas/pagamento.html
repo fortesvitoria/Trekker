@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../assets/css/viagem-peru.css">
     <link rel="stylesheet" href="../assets/css/passagens.css">
     <link rel="stylesheet" href="../assets/css/resumo-viagem.css">
+    <link rel="stylesheet" href="../assets/css/pagamento.css">
 
 </head>
 
@@ -106,68 +107,76 @@
         <!-- FIM SECAO CHAT -->
 
         <!-- SEÇÃO DADOS VOO-->
-        <div class="secao-pesquisa secao-viagem-dados">
-            <div class="cidades">
-                <img src="../assets/images/icone-voos-decola.png" alt="" class="icone-chat">
-                <h6 class="itens-padding decola">São Paulo</h6>
-                <img src="../assets/images/icone-voos-pousa.png" alt="" class="icone-chat">
-                <h6 class="itens-padding">Cusco</h6>
-            </div>
-            <div class="data">
-                <img src="../assets/images/icone-calendario.png" alt="" class="icone-chat">
-                <h6 class="itens-padding">ter. 14 mai. - dom. 19 mai.</h6>
-            </div>
-            <div class="passageiro">
-                <img src="../assets/images/icone-user.png" alt="" class="icone-chat">
-                <h6 class="itens-padding">1 Passageiro</h6>
-            </div>
-            <div class="alterar-voo">
-                <a class="btn btn-primary" type="submit">Alterar voos</a>
-            </div>
-        </div>
         <!-- FIM SEÇÃO DADOS VOO-->
-        <!-- SECAO PASSAGENS-->
-        <!-- seção passagens texto -->
-        <!-- inicio card 1 -->
+        <!-- SECAO PAGAMENTO-->
+        <!-- inicio card -->
         <div class="container-info-texto">
-            <div class="col-8 col-sm-12">
+            <div class="col-md-8 col-sm-12">
                 <!-- inicio card passagem -->
-                <div class="card ">
+                <div class="card">
                     <!-- titulo card -->
-                    <h4 class="btn btn-primary tag-card-voo">Resumo da sua viagem</h4>
+                    <h4 class="btn btn-primary"><img src="../assets/images/icone-user.png" alt=""
+                            class="icone-nav">Adulto</h4>
                     <div class="card-body card-passagem">
-                        <!-- secao passagem 1 -->
-                        <div class="info-passagem-1 col-6 col-sm-12">
-                            <!-- passagem ida -->
-                            <div class="info-flex">
-                                <img src="../assets/images/icone-companhia-3.png" alt="" class="passagem-info passagem-icone">
-                                <h5 class="passagem-info">09:15 - 17:15</h5>
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Nome" aria-label="Nome">
                             </div>
-                            <!-- passagem volta -->
-                            <div class="info-flex">
-                                <img src="../assets/images/icone-companhia-3.png" alt="" class="passagem-info passagem-icone">
-
-                                <h5 class="passagem-info">21:10 - 16:20</h5>
-                                <p class="sub-texto">+1</p>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Sobrenome">
                             </div>
-                            <!-- pacote viagem -->
-                            <div class="info-flex">
-                                <h5 class="passagem-info aventura">Aventura de 5 Dias: De Machu Picchu ao Lago
-                                    Humantay</h5>
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label">Data de nascimento</label>
+                                <input type="date" class="form-control" id="inputdate" area-label="Data de nascimento">
                             </div>
-                        </div>
-                        <div class="horario info-passagem-2">
-                            <h6>Ida - ter. 14 mai. 10h00m</h6>
-                            <h6>Volta - dom. 19 mai. 16h10m</h6>
-                        </div>
-                        <!-- fim secao passagem 1 -->
-                        <!-- valor total -->
-                        <div class="preco-div col-2">
-                            <h3>R$ 2.000</h3>
-                            <h3>R$ 2.200</h3>
-                            <h6>Total R$ 4.200</h6>
-                            <a href="resumo-viagem.html" class="btn btn-primary">Ir para o pagamento</a>
-                        </div>
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label">Sexo</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Feminino</option>
+                                    <option>Masculino</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label">Nacionalidade</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Brasil</option>
+                                    <option>Bolivia</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" id="inputcpf" placeholder="CPF"
+                                    area-label="CPF">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label">Tipo de documento</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Cédula de identidade</option>
+                                    <option>Passaporte</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" id="inputId" placeholder="Nº de documento"
+                                    area-label="ndocumento">
+                            </div>
+                            <h4>Informações de contato</h4>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label">Código</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>+55</option>
+                                    <option>+61</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" id="inputnumero" placeholder="Número"
+                                    area-label="numero">
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Salvar</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <!-- fim card passagem -->

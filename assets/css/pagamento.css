@@ -1,0 +1,10 @@
+.btn {
+    cursor: default;
+    text-align: left;
+}
+
+.titulo-pagamento {
+    display: block;
+    align-items: end;
+    text-align: left;
+}
