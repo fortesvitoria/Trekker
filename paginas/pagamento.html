@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trekker</title>
+    <!-- importa css -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- icone aba -->
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <!-- importa css bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <!-- importa demais css -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/css/viagem-peru.css">
+    <link rel="stylesheet" href="../assets/css/passagens.css">
+    <link rel="stylesheet" href="../assets/css/resumo-viagem.css">
+
+</head>
+
+<body>
+    <!-- CABECALHO/MENU -->
+    <header>
+        <!-- NAVBAR/MENU -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <!-- marca -->
+                <div class="nav-marca">
+                    <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.png"
+                            alt="logo circular de montanhas verdes com fundo laranja" class="nav-icon"></a><a
+                        class="navbar-brand" href="../index.html">
+                        <h1>TREKKER</h1>
+                    </a>
+                </div>
+                <!-- fim marca -->
+                <!-- links -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <img src="../assets/images/icone-voos.png" alt="icone aviao"
+                                    class="icone-nav">Voos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <img src="../assets/images/icone-estadia.png" alt="icone casa"
+                                    class="icone-nav">Hospedagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../assets/images/icone-trekking.png"
+                                    alt="icone boneco fazendo trilha" class="icone-nav">Atrações</a>
+                        </li>
+                    </ul>
+                    <!-- fim links -->
+                    <!-- btn cadastrar/logar -->
+                    <form class="d-flex" role="">
+                        <button class="btn btn-outline-success" type="submit">Cadastre-se</button>
+                        <button class="btn btn-outline-success" type="submit">Login</button>
+                    </form>
+                    <!-- fim btn cadastrar/logar -->
+                </div>
+            </div>
+        </nav>
+        <!-- FIM NAVBAR/MENU -->
+    </header>
+    <!-- FIM CABECALHO/MENU -->
+
+    <!-- CORPO -->
+    <main>
+
+        <!-- SECAO CHAT -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-chat" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="../assets/images/icone-chat.png" alt="icone-chat" class="icone-chat">
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"><img src="../assets/images/icone-chat.png"
+                                alt="icone-chat" class="icone-nav">Fale conosco!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card-body chat-container">
+                            <!-- Mensagens do chat -->
+                            <div class="message">Usuário: Olá!</div>
+                            <div class="message">Atendente: Olá! Como posso ajudar?</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Digite sua mensagem...">
+                        </div>
+                        <button class="btn btn-primary" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIM SECAO CHAT -->
+
+        <!-- SEÇÃO DADOS VOO-->
+        <div class="secao-pesquisa secao-viagem-dados">
+            <div class="cidades">
+                <img src="../assets/images/icone-voos-decola.png" alt="" class="icone-chat">
+                <h6 class="itens-padding decola">São Paulo</h6>
+                <img src="../assets/images/icone-voos-pousa.png" alt="" class="icone-chat">
+                <h6 class="itens-padding">Cusco</h6>
+            </div>
+            <div class="data">
+                <img src="../assets/images/icone-calendario.png" alt="" class="icone-chat">
+                <h6 class="itens-padding">ter. 14 mai. - dom. 19 mai.</h6>
+            </div>
+            <div class="passageiro">
+                <img src="../assets/images/icone-user.png" alt="" class="icone-chat">
+                <h6 class="itens-padding">1 Passageiro</h6>
+            </div>
+            <div class="alterar-voo">
+                <a class="btn btn-primary" type="submit">Alterar voos</a>
+            </div>
+        </div>
+        <!-- FIM SEÇÃO DADOS VOO-->
+        <!-- SECAO PASSAGENS-->
+        <!-- seção passagens texto -->
+        <!-- inicio card 1 -->
+        <div class="container-info-texto">
+            <div class="col-8 col-sm-12">
+                <!-- inicio card passagem -->
+                <div class="card ">
+                    <!-- titulo card -->
+                    <h4 class="btn btn-primary tag-card-voo">Resumo da sua viagem</h4>
+                    <div class="card-body card-passagem">
+                        <!-- secao passagem 1 -->
+                        <div class="info-passagem-1 col-6 col-sm-12">
+                            <!-- passagem ida -->
+                            <div class="info-flex">
+                                <img src="../assets/images/icone-companhia-3.png" alt="" class="passagem-info passagem-icone">
+                                <h5 class="passagem-info">09:15 - 17:15</h5>
+                            </div>
+                            <!-- passagem volta -->
+                            <div class="info-flex">
+                                <img src="../assets/images/icone-companhia-3.png" alt="" class="passagem-info passagem-icone">
+
+                                <h5 class="passagem-info">21:10 - 16:20</h5>
+                                <p class="sub-texto">+1</p>
+                            </div>
+                            <!-- pacote viagem -->
+                            <div class="info-flex">
+                                <h5 class="passagem-info aventura">Aventura de 5 Dias: De Machu Picchu ao Lago
+                                    Humantay</h5>
+                            </div>
+                        </div>
+                        <div class="horario info-passagem-2">
+                            <h6>Ida - ter. 14 mai. 10h00m</h6>
+                            <h6>Volta - dom. 19 mai. 16h10m</h6>
+                        </div>
+                        <!-- fim secao passagem 1 -->
+                        <!-- valor total -->
+                        <div class="preco-div col-2">
+                            <h3>R$ 2.000</h3>
+                            <h3>R$ 2.200</h3>
+                            <h6>Total R$ 4.200</h6>
+                            <a href="resumo-viagem.html" class="btn btn-primary">Ir para o pagamento</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim card passagem -->
+            </div>
+        </div>
+        <!-- fim card 1 -->
+
+
+        <!-- inicio secao detalhes -->
+        <div class="col-sm-3">
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- fim inicio secao detalhes -->
+        <!-- FIM SECAO PASSAGENS-->
+    </main>
+    <!-- FIM CORPO -->
+    <!-- INICIO RODAPE -->
+    <div class="secao-rodape">
+        <div class="secao-rodape-div">
+            <ul>
+                <h5>Empresa</h5>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Empregos</a></li>
+                <li><a href="">Aplicativos</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Como trabalhamos</a></li>
+            </ul>
+            <ul>
+                <h5>Contato</h5>
+                <li><a href="">Ajuda/FAQ</a></li>
+                <li><a href="">Imprensa</a></li>
+                <li><a href="">Afiliados</a></li>
+                <li><a href="">Poprietários de hospedagens</a></li>
+                <li><a href="">Parceiros</a></li>
+            </ul>
+            <ul>
+                <h5>Mais</h5>
+                <li><a href="">Taxas de companhias Aéreas</a></li>
+                <li><a href="">Companhias Aéreas</a></li>
+                <li><a href="">Preços</a></li>
+                <li><a href="">Selos e certificados</a></li>
+            </ul>
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+
+    </div>
+    <div class="secao-direitos">
+        <p>&copy; 2024 Vitória Fortes. Todos os direitos reservados.</p>
+    </div>
+    <!-- FIM INICIO RODAPE -->
+
+    <!-- importa js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
