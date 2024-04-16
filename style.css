@@ -73,6 +73,13 @@ button {
     font-size: 14px;
     color: var(--grafite);
 }
+
+.linha {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 /* NAVBAR/MENU */
 
 .navbar {

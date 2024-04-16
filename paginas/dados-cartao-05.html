@@ -72,53 +72,90 @@
 
     <!-- CORPO -->
     <main>
+        <!-- SECAO PASSAGEM-->
+        <!-- seção passagens texto -->
+        <!-- inicio card -->
+        <div class="container-info-texto m-4">
+            <h3>Confirme e pague sua compra</h3>
+            <div class="col-sm-6">
+                <!-- inicio card passagem -->
+                <div class="card m-3">
+                    <!-- titulo card -->
+                    <h4 class="btn btn-primary tag-card-voo">Total a pagar</h4>
+                    <div class="card-body card-passagem">
+                        <!-- secao passagem 1 -->
+                        <div class="info-passagem-1 col-6 col-sm-12">
+                            <!-- passagem ida -->
+                            <div class="info-flex">
+                                <img src="../assets/images/icone-companhia-3.png" alt=""
+                                    class="passagem-info passagem-icone">
+                                <h5 class="passagem-info">09:15 - 17:15</h5>
+                            </div>
+                            <!-- passagem volta -->
+                            <div class="info-flex">
+                                <img src="../assets/images/icone-companhia-3.png" alt=""
+                                    class="passagem-info passagem-icone">
 
-        <!-- SECAO CHAT -->
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-chat" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src="../assets/images/icone-chat.png" alt="icone-chat" class="icone-chat">
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel"><img src="../assets/images/icone-chat.png"
-                                alt="icone-chat" class="icone-nav">Fale conosco!</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="card-body chat-container">
-                            <!-- Mensagens do chat -->
-                            <div class="message">Usuário: Olá!</div>
-                            <div class="message">Atendente: Olá! Como posso ajudar?</div>
+                                <h5 class="passagem-info">21:10 - 16:20</h5>
+                                <p class="sub-texto">+1</p>
+                            </div>
+                            <!-- pacote viagem -->
+                            <div class="info-flex">
+                                <h5 class="passagem-info aventura">Aventura de 5 Dias: De Machu Picchu ao Lago
+                                    Humantay</h5>
+                            </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Digite sua mensagem...">
+                        <div class="horario info-passagem-2">
+                            <h6>Ida - ter. 14 mai. 10h00m</h6>
+                            <h6>Volta - dom. 19 mai. 16h10m</h6>
                         </div>
-                        <button class="btn btn-primary" type="button">Enviar</button>
+                        <!-- fim secao passagem 1 -->
+                        <!-- valor total -->
+                        <div class="preco-div col-2">
+                            <h3>R$ 2.000</h3>
+                            <h3>R$ 2.200</h3>
+                            <h6>Total R$ 4.200</h6>
+                        </div>
                     </div>
                 </div>
+                <!-- fim card passagem -->
             </div>
         </div>
-        <!-- FIM SECAO CHAT -->
-
-        <!-- SEÇÃO DADOS VOO-->
-        <!-- FIM SEÇÃO DADOS VOO-->
+        <!-- FIM SECAO PASSAGEM-->
+        <div class="linha">
+            <hr class="col-sm-6 m-4">
+        </div>
         <!-- SECAO PAGAMENTO-->
         <!-- inicio card -->
         <!-- seção info texto -->
         <div class="row container-info">
             <div class="container-info-texto col-sm-6">
+                <h4>Formas de pagamento</h4>
                 <div class="card m-3">
                     <!-- titulo card -->
-                    <h4 class="btn btn-primary"><img src="../assets/images/icone-user.png" alt=""
-                            class="icone-nav">Adulto</h4>
+                    <h4 class="btn btn-primary"><img src="../assets/images/icone-cartao.png" alt=""
+                            class="icone-nav">Adicionar cartão</h4>
                     <div class="card-body card-passagem">
                         <form class="row g-3 p-2">
+                            <div class="d-flex justify-content-between">
+                                <p>Pagamento com cartão de crédito</p>
+                                <h6>Total R$ 4.200,00</h6>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Número do cartão"
+                                    aria-label="Numero">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Nome e Sobrenome"
+                                    aria-label="NomeSobrenome">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="inputState" class="form-label">Vencimento</label>
+                                <input type="date" class="form-control" id="inputdate" area-label="Data de nascimento">
+                            </div>
+                            <div class="">
+                                <h6>Dados da cobrança</h6>
+                            </div>
                             <div class="col-md-6">
                                 <input type="text" class="form-control" placeholder="Nome" aria-label="Nome">
                             </div>
@@ -130,50 +167,42 @@
                                 <input type="date" class="form-control" id="inputdate" area-label="Data de nascimento">
                             </div>
                             <div class="col-md-6">
-                                <label for="inputState" class="form-label">Sexo</label>
-                                <select id="inputState" class="form-select">
-                                    <option selected>Feminino</option>
-                                    <option>Masculino</option>
-                                </select>
+                                <label for="inputState" class="form-label">CPF</label>
+                                <input type="number" class="form-control" id="inputcpf" placeholder="CPF"
+                                    area-label="CPF">
                             </div>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" placeholder="Endereço" aria-label="Endereco">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" placeholder="Complemento" aria-label="Complemento">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="number" class="form-control" id="inputcep" placeholder="CEP"
+                                    area-label="CEP">
+                            </div>                            
                             <div class="col-md-6">
-                                <label for="inputState" class="form-label">Nacionalidade</label>
                                 <select id="inputState" class="form-select">
                                     <option selected>Brasil</option>
                                     <option>Bolivia</option>
                                 </select>
                             </div>
-                            <div class="col-md-6">
-                                <input type="number" class="form-control" id="inputcpf" placeholder="CPF"
-                                    area-label="CPF">
+                            <div class="linha">
+                                <hr class="col-sm-12 m-4">
                             </div>
-                            <div class="col-md-6">
-                                <label for="inputState" class="form-label">Tipo de documento</label>
-                                <select id="inputState" class="form-select">
-                                    <option selected>Cédula de identidade</option>
-                                    <option>Passaporte</option>
-                                </select>
+                            <div class="">
+                                <h6>Para onde devemos enviar o comprovante de compra?</h6>
                             </div>
-                            <div class="col-md-6">
-                                <input type="number" class="form-control" id="inputId" placeholder="Nº de documento"
-                                    area-label="ndocumento">
-                            </div>
-                            <h4>Informações de contato</h4>
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail">
                             </div>
-                            <div class="col-md-2">
-                                <select id="inputState" class="form-select">
-                                    <option selected>+55</option>
-                                    <option>+61</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <input type="number" class="form-control" id="inputnumero" placeholder="Número"
-                                    area-label="numero">
+                            <div class="info-flex ">
+                                <span><input class="form-check-input me-2" type="checkbox" value=""
+                                        id="flexCheckDefault"></span>
+                                <h6 class="sub-texto mt-1" style="cursor: pointer;">Ao continuar aceito os termos de de condições de compra</h6>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Salvar</button>
+                                <button type="submit" class="btn btn-primary">Pagar R$ 4.200,00</button>
                             </div>
                         </form>
                     </div>
