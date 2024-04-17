@@ -1,157 +1,431 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trekker</title>
-    <!-- importa css -->
-    <link rel="stylesheet" href="../style.css">
-    <!-- icone aba -->
-    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
-    <!-- importa css bootstrap -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
-    <!-- importa demais css -->
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../assets/css/viagem-peru.css">
-    <link rel="stylesheet" href="../assets/css/passagens.css">
-    <link rel="stylesheet" href="../assets/css/resumo-viagem.css">
-    <link rel="stylesheet" href="../assets/css/pagamento.css">
-    <!-- script api pdf -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <title>Gerando pdf</title>
 </head>
-
-</head>
-
 <body>
-    <!-- CABECALHO/MENU -->
-    <header>
-        <!-- NAVBAR/MENU -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <!-- marca -->
-                <div class="nav-marca">
-                    <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.png"
-                            alt="logo circular de montanhas verdes com fundo laranja" class="nav-icon"></a><a
-                        class="navbar-brand" href="../index.html">
-                        <h1>TREKKER</h1>
-                    </a>
-                </div>
-                <!-- fim marca -->
-                <!-- links -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"> <img src="../assets/images/icone-voos.png" alt="icone aviao"
-                                    class="icone-nav">Voos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"> <img src="../assets/images/icone-estadia.png" alt="icone casa"
-                                    class="icone-nav">Hospedagens</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="../assets/images/icone-trekking.png"
-                                    alt="icone boneco fazendo trilha" class="icone-nav">Atrações</a>
-                        </li>
-                    </ul>
-                    <!-- fim links -->
-                    <!-- btn cadastrar/logar -->
-                    <form class="d-flex" role="">
-                        <button class="btn btn-outline-success" type="submit">Cadastre-se</button>
-                        <button class="btn btn-outline-success" type="submit">Login</button>
-                    </form>
-                    <!-- fim btn cadastrar/logar -->
-                </div>
-            </div>
-        </nav>
-        <!-- FIM NAVBAR/MENU -->
-    </header>
-    <!-- FIM CABECALHO/MENU -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/canvas2image@1.0.5/canvas2image.min.js"></script>
 
-    <!-- CORPO -->
-    <main>
-        <!-- SECAO PASSAGEM-->
-        <!-- seção passagens texto -->
-        <!-- inicio card -->
-        <div class="container-info-texto ">
-            <h3>Compra Efetivada</h3>
-            <div class="col-sm-12 m-3 d-flex justify-content-center text-center">
-                <!-- inicio card passagem -->
-                <div class="card">
-                    <div id="conteudo" class="card-body card-passagem p-3">
-                        <!-- secao passagem 1 -->
-                        <div class="info-passagem-1">
-                            <!-- passagem ida -->
-                            <div>
-                                <h5>Sua compra foi aprovada!</h5>
-                            </div>
-                            <!-- passagem volta -->
-                            <div class="">
-                                <p class="sub-texto">Seu código é</p>
-                                <h5 class="passagem-info">FG8545T6G4D56</h5>
-                            </div>
-                            <div class="col-12">
-                                <button id="imprimirPdf" class="btn btn-primary m-3" style="cursor: pointer;">Imprimir
-                                    comprovante</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- fim card passagem -->
-            </div>
-        </div>
-        <!-- FIM SECAO PASSAGEM-->
-    </main>
-    <!-- FIM CORPO -->
-    <!-- INICIO RODAPE -->
-    <div class="secao-rodape">
-        <div class="secao-rodape-div">
-            <ul>
-                <h5>Empresa</h5>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Empregos</a></li>
-                <li><a href="">Aplicativos</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Como trabalhamos</a></li>
-            </ul>
-            <ul>
-                <h5>Contato</h5>
-                <li><a href="">Ajuda/FAQ</a></li>
-                <li><a href="">Imprensa</a></li>
-                <li><a href="">Afiliados</a></li>
-                <li><a href="">Poprietários de hospedagens</a></li>
-                <li><a href="">Parceiros</a></li>
-            </ul>
-            <ul>
-                <h5>Mais</h5>
-                <li><a href="">Taxas de companhias Aéreas</a></li>
-                <li><a href="">Companhias Aéreas</a></li>
-                <li><a href="">Preços</a></li>
-                <li><a href="">Selos e certificados</a></li>
-            </ul>
-        </div>
+<!-- import -->
+
+
+<button type="button" class="btn btn-success" onclick="createPDF();">pdf</button>
+ 
+<div id="renderPDF" class="container">
+	<div class="jumbotron">
+		<h1>Bootstrap Tutorial</h1>
+		<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+	</div>
+	<div id="customers">
+		<table id="tab_customers" class="table table-striped">
+			<thead>
+				<tr class='btn-danger'>
+					<th>#</th>
+					<th>Population</th>
+					<th>Date</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>1,363,480,000</td>
+					<td>March 24, 2014</td>
+					<td>19.1</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>1,241,900,000</td>
+					<td>March 24, 2014</td>
+					<td>17.4</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>317,746,000</td>
+					<td>March 24, 2014</td>
+					<td>4.44</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>249,866,000</td>
+					<td>July 1, 2013</td>
+					<td>3.49</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>201,032,714</td>
+					<td>July 1, 2013</td>
+					<td>2.81</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>1,363,480,000</td>
+					<td>March 24, 2014</td>
+					<td>19.1</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>1,241,900,000</td>
+					<td>March 24, 2014</td>
+					<td>17.4</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>317,746,000</td>
+					<td>March 24, 2014</td>
+					<td>4.44</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>249,866,000</td>
+					<td>July 1, 2013</td>
+					<td>3.49</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>201,032,714</td>
+					<td>July 1, 2013</td>
+					<td>2.81</td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>1,363,480,000</td>
+					<td>March 24, 2014</td>
+					<td>19.1</td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td>1,241,900,000</td>
+					<td>March 24, 2014</td>
+					<td>17.4</td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td>317,746,000</td>
+					<td>March 24, 2014</td>
+					<td>4.44</td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td>249,866,000</td>
+					<td>July 1, 2013</td>
+					<td>3.49</td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td>201,032,714</td>
+					<td>July 1, 2013</td>
+					<td>2.81</td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td>1,363,480,000</td>
+					<td>March 24, 2014</td>
+					<td>19.1</td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td>1,241,900,000</td>
+					<td>March 24, 2014</td>
+					<td>17.4</td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td>317,746,000</td>
+					<td>March 24, 2014</td>
+					<td>4.44</td>
+				</tr>
+				<tr>
+					<td>19</td>
+					<td>249,866,000</td>
+					<td>July 1, 2013</td>
+					<td>3.49</td>
+				</tr>
+				<tr>
+					<td>20</td>
+					<td>201,032,714</td>
+					<td>July 1, 2013</td>
+					<td>2.81</td>
+				</tr>
+				<tr>
+					<td>21</td>
+					<td>1,363,480,000</td>
+					<td>March 24, 2014</td>
+					<td>19.1</td>
+				</tr>
+				<tr>
+					<td>22</td>
+					<td>1,241,900,000</td>
+					<td>March 24, 2014</td>
+					<td>17.4</td>
+				</tr>
+				<tr>
+					<td>23</td>
+					<td>317,746,000</td>
+					<td>March 24, 2014</td>
+					<td>4.44</td>
+				</tr>
+				<tr>
+					<td>24</td>
+					<td>249,866,000</td>
+					<td>July 1, 2013</td>
+					<td>3.49</td>
+				</tr>
+				<tr>
+					<td>25</td>
+					<td>201,032,714</td>
+					<td>July 1, 2013</td>
+					<td>2.81</td>
+				</tr>
+				<tr>
+					<td>26</td>
+					<td>1,363,480,000</td>
+					<td>March 24, 2014</td>
+					<td>19.1</td>
+				</tr>
+				<tr>
+					<td>27</td>
+					<td>1,241,900,000</td>
+					<td>March 24, 2014</td>
+					<td>17.4</td>
+				</tr>
+				<tr>
+					<td>28</td>
+					<td>317,746,000</td>
+					<td>March 24, 2014</td>
+					<td>4.44</td>
+				</tr>
+				<tr>
+					<td>29</td>
+					<td>249,866,000</td>
+					<td>July 1, 2013</td>
+					<td>3.49</td>
+				</tr>
+				<tr>
+					<td>30</td>
+					<td>201,032,714</td>
+					<td>July 1, 2013</td>
+					<td>2.81</td>
+				</tr>
+				<tr>
+					<td>31</td>
+					<td>1,363,480,000</td>
+					<td>March 24, 2014</td>
+					<td>19.1</td>
+				</tr>
+				<tr>
+					<td>32</td>
+					<td>1,241,900,000</td>
+					<td>March 24, 2014</td>
+					<td>17.4</td>
+				</tr>
+				<tr>
+					<td>33</td>
+					<td>317,746,000</td>
+					<td>March 24, 2014</td>
+					<td>4.44</td>
+				</tr>
+				<tr>
+					<td>34</td>
+					<td>249,866,000</td>
+					<td>July 1, 2013</td>
+					<td>3.49</td>
+				</tr>
+				<tr>
+					<td>35</td>
+					<td>201,032,714</td>
+					<td>July 1, 2013</td>
+					<td>2.81</td>
+				</tr>
+				<tr>
+					<td>36</td>
+					<td>1,363,480,000</td>
+					<td>March 24, 2014</td>
+					<td>19.1</td>
+				</tr>
+				<tr>
+					<td>37</td>
+					<td>1,241,900,000</td>
+					<td>March 24, 2014</td>
+					<td>17.4</td>
+				</tr>
+				<tr>
+					<td>38</td>
+					<td>317,746,000</td>
+					<td>March 24, 2014</td>
+					<td>4.44</td>
+				</tr>
+				<tr>
+					<td>39</td>
+					<td>249,866,000</td>
+					<td>July 1, 2013</td>
+					<td>3.49</td>
+				</tr>
+				<tr>
+					<td>40</td>
+					<td>201,032,714</td>
+					<td>July 1, 2013</td>
+					<td>2.81</td>
+				</tr>
+				<tr>
+					<td>41</td>
+					<td>1,363,480,000</td>
+					<td>March 24, 2014</td>
+					<td>19.1</td>
+				</tr>
+				<tr>
+					<td>42</td>
+					<td>1,241,900,000</td>
+					<td>March 24, 2014</td>
+					<td>17.4</td>
+				</tr>
+				<tr>
+					<td>43</td>
+					<td>317,746,000</td>
+					<td>March 24, 2014</td>
+					<td>4.44</td>
+				</tr>
+				<tr>
+					<td>44</td>
+					<td>249,866,000</td>
+					<td>July 1, 2013</td>
+					<td>3.49</td>
+				</tr>
+				<tr>
+					<td>45</td>
+					<td>201,032,714</td>
+					<td>July 1, 2013</td>
+					<td>2.81</td>
+				</tr>
+				<tr>
+					<td>46</td>
+					<td>1,363,480,000</td>
+					<td>March 24, 2014</td>
+					<td>19.1</td>
+				</tr>
+				<tr>
+					<td>47</td>
+					<td>1,241,900,000</td>
+					<td>March 24, 2014</td>
+					<td>17.4</td>
+				</tr>
+				<tr>
+					<td>48</td>
+					<td>317,746,000</td>
+					<td>March 24, 2014</td>
+					<td>4.44</td>
+				</tr>
+				<tr>
+					<td>49</td>
+					<td>249,866,000</td>
+					<td>July 1, 2013</td>
+					<td>3.49</td>
+				</tr>
+				<tr>
+					<td>50</td>
+					<td>201,032,714</td>
+					<td>July 1, 2013</td>
+					<td>2.81</td>
+				</tr>
+				<tr>
+					<td>51</td>
+					<td>1,363,480,000</td>
+					<td>March 24, 2014</td>
+					<td>19.1</td>
+				</tr>
+				<tr>
+					<td>52</td>
+					<td>1,241,900,000</td>
+					<td>March 24, 2014</td>
+					<td>17.4</td>
+				</tr>
+				<tr>
+					<td>53</td>
+					<td>317,746,000</td>
+					<td>March 24, 2014</td>
+					<td>4.44</td>
+				</tr>
+				<tr>
+					<td>54</td>
+					<td>249,866,000</td>
+					<td>July 1, 2013</td>
+					<td>3.49</td>
+				</tr>
+				<tr>
+					<td>55</td>
+					<td>201,032,714</td>
+					<td>July 1, 2013</td>
+					<td>2.81</td>
+				</tr>
+				<tr>
+					<td>56</td>
+					<td>1,363,480,000</td>
+					<td>March 24, 2014</td>
+					<td>19.1</td>
+				</tr>
+				<tr>
+					<td>57</td>
+					<td>1,241,900,000</td>
+					<td>March 24, 2014</td>
+					<td>17.4</td>
+				</tr>
+				<tr>
+					<td>58</td>
+					<td>317,746,000</td>
+					<td>March 24, 2014</td>
+					<td>4.44</td>
+				</tr>
+				<tr>
+					<td>59</td>
+					<td>249,866,000</td>
+					<td>July 1, 2013</td>
+					<td>3.49</td>
+				</tr>
+				<tr>
+					<td>60</td>
+					<td>201,032,714</td>
+					<td>July 1, 2013</td>
+					<td>2.81</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div id="renderPDF" class="container" style="background-color: #003399;">
+    <h2>Basic Panel</h2>
+    <div class="panel panel-default">
+      <div class="panel-body">A Basic Panel</div>
     </div>
+  </div>
 
-    <div class="secao-direitos">
-        <p>&copy; 2024 Vitória Fortes. Todos os direitos reservados.</p>
-    </div>
-    <!-- FIM INICIO RODAPE -->
+  <script language="javascript"> 
+    var cache_width = $('#renderPDF').width(); //Criado um cache do CSS
+    var a4  =[ 595.28,  841.89]; // Widht e Height de uma folha a4
 
-    <!-- importa js bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    function getPDF(){
+    // Setar o width da div no formato a4
+    $("#renderPDF").width((a4[0]*1.33333) -80).css('max-width','none');
 
-    <!-- script pdf -->
-    <script src="../gerarPdf.js"></script>
+    // Aqui ele cria a imagem e cria o pdf
+    html2canvas($('#renderPDF'), {
+      onrendered: function(canvas) {
+        var img = canvas.toDataURL("image/png",1.0);  
+        var doc = new jsPDF({unit:'px', format:'a4'});
+        doc.addImage(img, 'JPEG', 20, 20);
+        doc.save('NOME-DO-PDF.pdf');
+        //Retorna ao CSS normal
+        $('#renderPDF').width(cache_width);
+      }
+    });
+    }
+</script>
 </body>
 
 </html>
