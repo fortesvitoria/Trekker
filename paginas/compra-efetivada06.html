@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trekker</title>
+    <!-- importa css -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- icone aba -->
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <!-- importa css bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <!-- importa demais css -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/css/viagem-peru.css">
+    <link rel="stylesheet" href="../assets/css/passagens.css">
+    <link rel="stylesheet" href="../assets/css/resumo-viagem.css">
+    <link rel="stylesheet" href="../assets/css/pagamento.css">
+    <!-- script api pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+</head>
+
+<body>
+    <!-- CABECALHO/MENU -->
+    <header>
+        <!-- NAVBAR/MENU -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <!-- marca -->
+                <div class="nav-marca">
+                    <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.png"
+                            alt="logo circular de montanhas verdes com fundo laranja" class="nav-icon"></a><a
+                        class="navbar-brand" href="../index.html">
+                        <h1>TREKKER</h1>
+                    </a>
+                </div>
+                <!-- fim marca -->
+                <!-- links -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <img src="../assets/images/icone-voos.png" alt="icone aviao"
+                                    class="icone-nav">Voos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> <img src="../assets/images/icone-estadia.png" alt="icone casa"
+                                    class="icone-nav">Hospedagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../assets/images/icone-trekking.png"
+                                    alt="icone boneco fazendo trilha" class="icone-nav">Atrações</a>
+                        </li>
+                    </ul>
+                    <!-- fim links -->
+                    <!-- btn cadastrar/logar -->
+                    <form class="d-flex" role="">
+                        <button class="btn btn-outline-success" type="submit">Cadastre-se</button>
+                        <button class="btn btn-outline-success" type="submit">Login</button>
+                    </form>
+                    <!-- fim btn cadastrar/logar -->
+                </div>
+            </div>
+        </nav>
+        <!-- FIM NAVBAR/MENU -->
+    </header>
+    <!-- FIM CABECALHO/MENU -->
+
+    <!-- CORPO -->
+    <main>
+        <!-- SECAO PASSAGEM-->
+        <!-- seção passagens texto -->
+        <!-- inicio card -->
+        <div class="container-info-texto ">
+            <h3>Compra Efetivada</h3>
+            <div class="col-sm-12 m-3 d-flex justify-content-center text-center">
+                <!-- inicio card passagem -->
+                <div class="card">
+                    <div id="conteudo" class="card-body card-passagem p-3">
+                        <!-- secao passagem 1 -->
+                        <div class="info-passagem-1">
+                            <!-- passagem ida -->
+                            <div>
+                                <h5>Sua compra foi aprovada!</h5>
+                            </div>
+                            <!-- passagem volta -->
+                            <div class="">
+                                <p class="sub-texto">Seu código é</p>
+                                <h5 class="passagem-info">FG8545T6G4D56</h5>
+                            </div>
+                            <div class="col-12">
+                                <button id="imprimirPdf" class="btn btn-primary m-3" style="cursor: pointer;">Imprimir
+                                    comprovante</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fim card passagem -->
+            </div>
+        </div>
+        <!-- FIM SECAO PASSAGEM-->
+    </main>
+    <!-- FIM CORPO -->
+    <!-- INICIO RODAPE -->
+    <div class="secao-rodape">
+        <div class="secao-rodape-div">
+            <ul>
+                <h5>Empresa</h5>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Empregos</a></li>
+                <li><a href="">Aplicativos</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Como trabalhamos</a></li>
+            </ul>
+            <ul>
+                <h5>Contato</h5>
+                <li><a href="">Ajuda/FAQ</a></li>
+                <li><a href="">Imprensa</a></li>
+                <li><a href="">Afiliados</a></li>
+                <li><a href="">Poprietários de hospedagens</a></li>
+                <li><a href="">Parceiros</a></li>
+            </ul>
+            <ul>
+                <h5>Mais</h5>
+                <li><a href="">Taxas de companhias Aéreas</a></li>
+                <li><a href="">Companhias Aéreas</a></li>
+                <li><a href="">Preços</a></li>
+                <li><a href="">Selos e certificados</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="secao-direitos">
+        <p>&copy; 2024 Vitória Fortes. Todos os direitos reservados.</p>
+    </div>
+    <!-- FIM INICIO RODAPE -->
+
+    <!-- importa js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- script pdf -->
+    <script src="../gerarPdf.js"></script>
+</body>
+
+</html>
